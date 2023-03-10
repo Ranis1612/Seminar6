@@ -1,0 +1,50 @@
+﻿/*Задача 40:**Напишите программу,
+ которая принимает на вход три числа и проверяет, может ли
+ существовать треугольник с сторонами такой длины.
+
+
+❗ **Теорема о неравенстве треугольника:
+каждая сторона треугольника меньше суммы двух других сторон.*/
+
+
+
+// Console.Clear();
+// Console.Write("Введите стороны треугольника через пробел: ");
+
+// string[] st = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+// int a = int.Parse(st[0]);
+// int b = int.Parse(st[1]);
+// int c = int.Parse(st[2]);
+
+// if (true){
+//     Console.WriteLine("Да");
+// }
+// else{
+//     Console.WriteLine("Нет");
+// }
+
+// bool IsTriangle(int a1, int b1, int c1){
+//     return (((a + b) > c) && ((a + c) > b) && ((b + c) > a));
+// }
+
+
+Console.Clear();
+Console.WriteLine("Введите длину a ");
+int a = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите длину b ");
+int b = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите длину c ");
+int c = int.Parse(Console.ReadLine()!);
+
+
+void СheckingTheTriangle(int a, int b, int c)
+{
+  if((a+b)>c && (a+c)>b && (c+b)>a){
+    Console.WriteLine("Да");
+  }
+   else{
+    Console.WriteLine("Нет");
+    }
+    
+}
+СheckingTheTriangle(a, b, c);
